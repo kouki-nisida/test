@@ -28,8 +28,7 @@ export default {
   },
   async created() {
     const item = await axios.get(
-      `https://api.openweathermap.org/data/2.5/weather?q=${this.city}&units=metric&appid=514f432ad19462467edcc7afed440597
-`
+      `https://apis.postcode-jp.com/api/v4/postcodes/`
     );
     console.log(item);
     const weatherData = item.data;
